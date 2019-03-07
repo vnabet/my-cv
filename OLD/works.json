@@ -1,0 +1,33 @@
+[
+	{"id":"players-radios", "name": "Players radios", "description": "J'ai developpé de nombreux players pour des radios live et des webradios.</br>Ces players ont la particularité d'afficher le titre des passages musicaux en cours et leur pochette associée. Certains players permettent aussi de rejouer leurs dernières heures de programmes.<br>Ces fonctionnalités ont fait l'objet d'un développement de framework applicatif en AS3 afin que certains clients puissent intégrer eux même leurs projets de players (Virgin Radio, Europe1 ... )", "techno": "HTML/CSS, Javascript, Flash, Flex, PHP", "images": [
+		{"id": "nrj", "file": "players/nrj.png", "description": "Une des nombreuses versions du player NRJ"},
+		{"id": "twizz", "file": "players/twizz.png", "description": "Player de la radio belge <a href='http://www.twizzradio.be/' target='_blank' title='Player Twizz Radio'>Twizz</a>"},
+		{"id": "skyrock", "file": "players/skyrock.png", "description": "Player <a href='http://www.skyrock.fm/player/' target='_blank' title='Player Skyrock'>Skyrock</a>"},
+		{"id": "rmc", "file": "players/rmc.png", "description": "Ancienne version du  player RMC"},
+		{"id": "cheriefm", "file": "players/cheriefm.png", "description": "Une des versions du player Chérie FM"},
+		{"id": "maxximum", "file": "players/maxximum.png", "description": "Maxximum,<br>une des webradios du site <a href='http://www.airplayradios.com/' target='_blank' title='Site AirplayRadios.com'>AirplayRadios.com</a>"},
+		{"id": "franceinter", "file": "players/franceinter.png", "description": "Ancienne version du player France Inter"}
+	]},
+	{"id":"mosaiques-medias", "name": "Mosaiques médias", "description": "Dans le cadre du projet de recherche <a href='http://www.quaero.org' target='_blank' title='Projet de recherche Quaero'>Quaero</a>, j'ai développé un player multi-radios: <a href='http://viphttpplayers.yacast.net/V4/fmpremium/fmpremium.html' target='_blank' title='player FM Premium'>FM Premium</a>. Il intègre, entre autre, l'affichage des passages musicaux et le replay sur 24 heures.<br/>Ce projet a abouti sur une seconde mosaique du même type et partie intégrante de l'application <a href='http://muzicast.yacast.fr/' target='_blank' title='Muzicast'>Muzicast</a> (Analyse des diffusions musicales).<br>", "techno":"Flex, PHP", "images": [
+		{"id": "fmpremium", "file": "mosaiques/fmpremium.png", "description": "Player <a href='http://viphttpplayers.yacast.net/V4/fmpremium/fmpremium.html' target='_blank' title='player FM Premium'>FM Premium</a>"},
+		{"id": "muzicast01", "file": "mosaiques/muzicast-01.png", "description": "Mosaique Muzicast"},
+		{"id": "muzicast02", "file": "mosaiques/muzicast-02.png", "description": "Mosaique Muzicast"}
+	]},
+	{"id":"site-yacast", "name": "Site Yacast", "description": "Développement et intégration du site <a href='http://www.yacast.fr' target='_blank' title='Site Yascast.fr'>Yacast.fr</a>", "techno": "HTML/CSS, Javascript, PHP", "images": [
+		{"id": "yacastfr01", "file": "yacastfr/yacastfr-01.png", "description": "Page d'accueil"},
+		{"id": "yacastfr02", "file": "yacastfr/yacastfr-02.png", "description": "Etudes réalisées par la société"},
+		{"id": "yacastfr03", "file": "yacastfr/yacastfr-03.png", "description": "Formulaire de contact"}
+	]},
+	{"id":"habillages-wordpress", "name": "Habillages Wordpress", "description": "WordPress est un excellent système de gestion de contenu qui permet énormément de libertés grâce à sa personnalisation des thèmes et la possibilité de développer rapidement des extensions en PHP.",  "techno": "GIMP, HTML/CSS, Javascript, PHP", "images": [
+		{"id": "ludoplanetefr", "file": "ludoplanete.png", "description": "Design, intégration et développements complémentaires du site de la <a href='http://www.ludoplanete.fr' target='_blank' title='Site de la Ludo Planète'>Ludo Planète</a>"},
+		{"id": "b0tit", "file": "b0t-it.png", "description": "Intégration du site <a href='http://www.b0t.it' target='_blank' title='Site b0t.it'>b0t.it</a>"}
+	]},
+	{"id":"lairdesbebesfr", "name": "Site l'Air des Bébés", "description": "Design, développement et intégration du site de <a href='http://www.lairdesbebes.fr' target='_blank' title='Site de l'Air des Bébés'>l'Air des Bébés</a>.", "techno": "GIMP, HTML/CSS, Javascript, PHP", "images": [
+		{"id": "lairdesbebes01", "file": "lairdesbebesfr/lairdesbebesfr-01.png", "description": "Page d'accueil"},
+		{"id": "lairdesbebes02", "file": "lairdesbebesfr/lairdesbebesfr-02.png", "description": "Page tarifaire"},
+		{"id": "lairdesbebes03", "file": "lairdesbebesfr/lairdesbebesfr-03.png", "description": "Formulaire de contact"}
+	]},
+	{"id":"havas", "name": "Videos In Banner", "description": "Développement, pour <a href='http://www.havasmedia.com/' target='_blank' title='Site Havas Media'>Havas Digital</a>, d'un framework (sous la forme d'un composant flash) facilitant la création d'encarts publicitaires de type 'videos in banner'.<br>A destination des intégrateurs et graphistes flash, ce composant permet d'intégrer rapidement une vidéo dans une animation flash et de gérer son contrôle, sans ligne de code.<br>Il inclue aussi, de manière transparente, la génération de statistiques d'impressions, de clicks etc.", "techno": "AS3", "images": [
+		{"id": "havasdigital", "file": "videosinbanner/havasdigital.png", "description": "Havas Digital"}
+	]}
+]
