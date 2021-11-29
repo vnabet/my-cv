@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Vincent Nabet</title>
+</head>
+<body class="">
+  <header>
+    <div>
+      <div class="photo">
+        <img src="img/vincent.jpeg" alt="" width="100">
+      </div>
+      <div class="title">
+        <span>Vincent Nabet</span><br/>Chargé de projet web
+      </div>
+      
+    </div>
+    
+    <div class="subtitle"><span>Full-stack</span> <span>C# .net core</span> <span>Javascript</span></div>
+    <div class="informations">
+      <ion-icon name="mail-outline"></ion-icon> <a href="mailto:vnabet@pm.me">vnabet@pm.me</a>
+      <br/><ion-icon name="call-outline"></ion-icon> <a href="tel:06.10.14.85.43">06.10.14.85.43</a>
+      <br/><span>60000 Beauvais</span>
+    </div>
+  </header>
+  <div class="container">
+    <nav>Nav</nav>
+    <main>
+      <section>
+        <h1>Experience</h1>
+        <div class="step">
+          <div class="date"><span>Depuis Juillet 2002</span></div>
+          <div class="content">
+            <h2>Chargé de projet</h2>
+            <div class="location">Yacast</div>
+            <div class="description">Mise en oeuvre, développement et intégration de players et d'applications audio et vidéo pour de grands groupes de médias (NRJ, Radio France, Skyrock, Lagardère etc.).
+              <br/>Technologies HTML/CSS, Javascript, Flash et Flex, PHP.</div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="date"><span>2002</span></div>
+          <div class="content">
+            <h2>Chargé de projet</h2>
+            <div class="location">Yacast</div>
+            <div class="description">Mise en oeuvre, développement et intégration de players et d'applications audio et vidéo pour de grands groupes de médias (NRJ, Radio France, Skyrock, Lagardère etc.).
+              <br/>Technologies HTML/CSS, Javascript, Flash et Flex, PHP.</div>
+          </div>
+        </div>
+      </section>
+      <h1>Compétences</h1>
+      <h2>Compétences</h2>
+      <ul class="skills">
+        <li style="--i:1">HTML <span data-skill-value="5">5</span></li>
+        <li style="--i:2">Complotisme <span data-skill-value="3">3</span></li>
+        <li style="--i:3">Javascript <span data-skill-value="5">5</span></li>
+        <li style="--i:4">Nécromancie <span data-skill-value="2">2</span></li>
+      </ul>
+    </main>
+  </div>
+
+  <div class="bg"></div>
+  <div class="toggle-mode" onclick="toggleMode()">toggle mode</div>
+
+  <script defer>
+  //   let skills = document.querySelectorAll('.skills li span');
+  //   window.setTimeout(() => {
+  //   skills.forEach((skill, index) => {
+    
+  //   skill.classList.add('level')
+  // },200)
+  // })
+
+    // let skills = document.querySelectorAll('.skills li span');
+    // let values = [];
+    // let max;
+
+    // if(skills) {
+    //   skills.forEach((skill) => {
+    //     values = [...values, parseInt(skill.innerHTML)];
+    //     max = Math.max(...values)
+    //   });
+
+    //   window.setTimeout(() => {
+    //     skills.forEach((skill, index) => {
+    //     let value = values[index];
+
+    //     skill.style.width = `${value * 100 / max}%`
+    //     //skill.classList.add('tutu')
+    //   },1000)
+    //   })
+      
+
+
+    // }
+    
+    let isDarkMode = window.localStorage && localStorage.getItem('dark');
+    if(isDarkMode === null) {
+      isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    } else {
+      isDarkMode = isDarkMode.toLowerCase() === 'true'?true:false;
+    }
+
+    if(isDarkMode) {
+      document.querySelector('body').classList.add('dark');
+      document.querySelector('.toggle-mode').classList.add('dark');
+    }
+
+    function toggleMode() {
+      const body = document.querySelector('body');
+      body.classList.toggle('dark');
+      document.querySelector('.toggle-mode').classList.toggle('dark');
+
+
+      if(window.localStorage) {
+        localStorage.setItem('dark', body.classList.contains('dark'));
+      }
+    }
+
+  </script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
