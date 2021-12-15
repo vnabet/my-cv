@@ -90,9 +90,14 @@ main, aside {
   padding: 20px;
 }
 
+aside {
+  margin: var(--margin) 0 0 0;
+}
+
 .container {
   flex-direction: column;
   margin: 0;
+  padding-bottom: var(--margin);
 }
 
 header {
@@ -186,8 +191,4 @@ header>div:first-child {
 .informations {
   text-align: center;
   padding: 10px 0;
-}
-
-aside {
-  margin: 0 0 10px 0;
 }
